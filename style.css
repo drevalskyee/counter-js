@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container h1 {
+    font-size: 90px;
+}
+
+#value {
+    font-size: 300px;
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 10%;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    align-items: center;
+    text-transform: capitalize;
+    border: none;
+    color: black;
+    background: inherit;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: lightblue;
+    transition: 0.3s;
+}
+
+/* add media queries */
+
+@media screen  and (max-width: 1280px){
+    .btn{
+        width: 80px;
+        font-size: 14px;
+    } 
+}
+
+@media screen  and (max-width: 1080px){
+    .button-container{
+        width: 26%;
+    }
+
+    .btn{
+        width: 70px;
+        font-size: 14px;
+    } 
+
+    #value {
+        font-size: 260px;
+    }
+
+    .container h1{
+        font-size: 70px;
+    }
+}
+
+@media screen  and (max-width: 900px) {
+    .button-container{
+        width: 35%;
+    }
+
+    .btn{
+        width: 70px;
+        font-size: 14px;
+    } 
+}
+
+@media screen  and (max-width: 768px) {
+    .button-container{
+        width: 50%;
+    }
+
+    .btn{
+        width: 70px;
+        font-size: 15px;
+    } 
+}
+
+@media screen  and (max-width: 480px) {
+    .button-container{
+        width: 60%;
+    }
+
+    .btn{
+        width: 60px;
+        font-size: 13px;
+    } 
+}
+
+@media screen  and (max-width: 320px) {
+    .button-container{
+        width: 60%;
+    }
+
+    .btn{
+        width: 50px;
+        font-size: 11px;
+    } 
+}
